@@ -1,0 +1,27 @@
+:root {
+  --hero-gradient-stop-1: rgb(10,2,17);
+  --hero-gradient-stop-2: rgb(83,8,156);
+  --hero-gradient-stop-3: rgb(63,63,186);
+  --hero-gradient-stop-4: rgb(0,212,255);
+  --hero-gradient: linear-gradient(
+    90deg, 
+    var(--hero-gradient-stop-1) 0%, 
+    var(--hero-gradient-stop-2) 30%, 
+    var(--hero-gradient-stop-3) 60%, 
+    var(--hero-gradient-stop-4) 100%);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  min-height: 100%;
+}
+
+body > .app-root {
+  display: contents;
+  width: 100%;
+  min-height: 100%;
+}

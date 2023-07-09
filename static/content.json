@@ -1,0 +1,57 @@
+{
+	"navigation": [
+		{
+			"id": "1",
+			"title": "Home",
+			"route": "/home",
+			"icon": "home"
+		},
+		{
+			"id": "2",
+			"title": "About Me",
+			"route": "/about",
+			"icon": "coffee"
+		},
+		{
+			"id": "3",
+			"title": "Projects",
+			"route": "/projects",
+			"icon": "terminal"
+		},
+		{
+			"id": "4",
+			"title": "Blog",
+			"route": "/blog",
+			"icon": "bookOpen",
+			"hidden": true
+		},
+		{
+			"id": "5",
+			"title": "Now",
+			"route": "/now",
+			"icon": "compass"
+		}
+	],
+	"content": {
+		"1": {
+			"title": "",
+			"body": ".md"
+		},
+		"2": {
+			"title": "About Me",
+			"body": ".md"
+		},
+		"3": {
+			"title": "Projects",
+			"body": ".md"
+		},
+		"4": {
+			"title": "Blog",
+			"body": ".md"
+		},
+		"5": {
+			"title": "What I'm up to now",
+			"body": ".md"
+		}
+	}
+}
