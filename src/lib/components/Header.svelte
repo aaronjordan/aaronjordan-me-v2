@@ -1,17 +1,23 @@
 <script lang="ts">
 	import { SettingsIcon } from 'svelte-feather-icons';
 	import NavGroup from './NavGroup.svelte';
+	import QuickSettings from './QuickSettings.svelte';
+	import type { NavigationEntry } from '$lib/types/content';
+
+	let settingsVisible = false;
+	export let navigationEntries: NavigationEntry[];
 </script>
 
 <header class="container-fluid">
 	<div>
-		<NavGroup />
+		<NavGroup entries={navigationEntries} />
 	</div>
 	<div>
-		<button class="icon secondary">
+		<button class="icon secondary" on:click={() => (settingsVisible = true)}>
 			<SettingsIcon />
 		</button>
 	</div>
+	<QuickSettings bind:visible={settingsVisible} />
 </header>
 
 <style lang="scss">
@@ -24,7 +30,6 @@
 		align-items: center;
 		padding: calc(0.5 * var(--spacing));
 		background: var(--code-background-color);
-		margin-bottom: calc(2 * var(--spacing));
 	}
 
 	header > * {

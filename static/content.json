@@ -1,57 +1,106 @@
 {
 	"navigation": [
 		{
-			"id": "1",
 			"title": "Home",
-			"route": "/home",
+			"route": "/",
 			"icon": "home"
 		},
 		{
-			"id": "2",
 			"title": "About Me",
 			"route": "/about",
 			"icon": "coffee"
 		},
 		{
-			"id": "3",
 			"title": "Projects",
 			"route": "/projects",
 			"icon": "terminal"
 		},
 		{
-			"id": "4",
 			"title": "Blog",
 			"route": "/blog",
 			"icon": "bookOpen",
 			"hidden": true
 		},
 		{
-			"id": "5",
 			"title": "Now",
 			"route": "/now",
 			"icon": "compass"
 		}
 	],
-	"content": {
-		"1": {
-			"title": "",
-			"body": ".md"
+	"pages": {
+		"/": {
+			"bodyUrl": "home.md"
 		},
-		"2": {
-			"title": "About Me",
-			"body": ".md"
+		"/about": {
+			"bodyUrl": "about.md"
 		},
-		"3": {
-			"title": "Projects",
-			"body": ".md"
-		},
-		"4": {
-			"title": "Blog",
-			"body": ".md"
-		},
-		"5": {
-			"title": "What I'm up to now",
-			"body": ".md"
+		"/now": {
+			"bodyUrl": "now.md"
 		}
-	}
+	},
+	"projects": [
+		{
+			"title": "Legal Removals Tool",
+			"company": "Google",
+			"body": "In my first role at Google, I have worked with a dynamic group of software engineers to adapt LRT to new business needs in a ever-changing landscape, modernize to a web component based architecture without disrupting current users, and harden the testing suite to ensure reliability of our system in the future. I've been able to experience the benefits and challenges presented by Google's tremendous scale of operations. The most delightful part of the role has been creating new and creative sharable utilities for internal users across projects using AngularDart frontend libraries.",
+			"links": {
+				"extlink": "https://reportcontent.google.com"
+			},
+			"imageUrl": "/img/googlelr.jpeg",
+			"caption": "TODO: add caption",
+			"featured": true
+		},
+		{
+			"title": "GM Ecommerce Applications",
+			"company": "General Motors",
+			"body": "On my first project at General Motors, I contributed to the rewrite of the Accessories e-commerce application. As a team, we delivered a more modern and snappy user interfance to enhance the experience both for customers and retailers (dealers) for aftersale items. Most of my work pertained to the internal application used to process orders by dealers and distribution centers. The project helped me build an understanding of how to build software that scales well, both in the sense of it being a large codebase and it having large user base. In addition, I reached a deep understanding of JavaScript through the process, at one point even implementing my own XLSX (Microsoft Excel File) writer in the language.",
+			"links": { "extlink": "https://accessories.chevrolet.com" },
+			"imageUrl": "/img/chevrolet.png",
+			"caption": "The Chevrolet Accessories website.",
+			"featured": true
+		},
+		{
+			"title": "My Wedding Website!",
+			"company": "Personal",
+			"body": "Applying what I learned through the first year of working for General Motors, I built a wedding website for myself and my fiance (who is now my wife!). Most of the site is built on a React/NodeJS/Express platform, similar to this site. It included a few key components: a secure RSVP section powered by OAuth (Google/Facebook) sign-in, a self-hosted livestream for my out-of-state family to stream the event, sections for our Target registry as well as hotel information, and \u2014 of course \u2014 many photos from all stages of our relationship! The areas of the site which are still relevant are still accessible today, with all of our wedding photos added to the photo gallery.",
+			"links": {
+				"github": "https://www.github.com/aaronjordan/mazlinandaaron.com/",
+				"extlink": "https://www.mazlinandaaron.com"
+			},
+			"imageUrl": "/img/mazlinaaroncom.png",
+			"caption": "My own wedding website!",
+			"featured": true
+		},
+		{
+			"title": "Coaching Portal",
+			"company": "Five Capitals",
+			"body": "My role at Five Capitals began with assisting in ecommerce integration and has now led to leading development of a premium coaches' area of the website. There, coaches can easily find up-to-date content to help them lead others, a process which before was a mess of Google Drive sharing and outdated local PDFs. As I have limited access to the backend, I have used JQuery and CSS to generate and manipulate DOM elements to provide new layouts and functionality.",
+			"links": {
+				"extlink": "https://www.fivecapitals.net"
+			},
+			"imageUrl": "/img/fcPortal.png",
+			"caption": "The Coaching Portal of the Five Capitals website."
+		},
+		{
+			"title": "Company Site",
+			"company": "Impactful Media",
+			"body": "Impactful Media is the brand I created for my freelance work. The website serves as a quick summary of the company and an easy method to get in touch with me. At the time, I wanted to build experience with vanilla ES6 Javascript, so the page uses the Fetch API for email submission and requires minimal frameworks. The backend server runs on Node.js with Express and Mailgun, which are the only dependencies of the project. The only external script loaded by the client is Font Awesome's CDN.",
+			"links": {
+				"github": "https://www.github.com/aaronjordan/impactful-media/",
+				"extlink": "https://impactfulmedia.co"
+			},
+			"imageUrl": "/img/imcSplash.png",
+			"caption": "The modern, lightweight Impactful Media website."
+		},
+		{
+			"title": "Audio Processing Analysis",
+			"company": "CSCI 310: Intro to Computer Architecture",
+			"body": "During my time in CSCI 310, I was given the opportunity to do a research paper on a topic of my choice in computer hardware. Having a background in audio engineering and interest in digital signal processing, the topic of filtering was an exciting choice. I used a Terasic DE-10 Standard and some starter code on Github, which I mapped from the DE-2 to the DE-10 and filtered several audio samples through. Analysis of the harmonic texture of the filtered output is discussed in the report.",
+			"links": {
+				"read": "https://drive.google.com/file/d/1Gmh2oL1zlLgT_UIummnMAcS4tDSuMSTb/view?usp=sharing"
+			},
+			"imageUrl": "/img/audioessay.png",
+			"caption": "My report on audio processing from CSCI 310."
+		}
+	]
 }
